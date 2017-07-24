@@ -35,19 +35,68 @@
 			<article id="informacionPersonal">
 				<h2>Información personal</h2>
 				<h3>Nombres y apellidos: Maritza Marlene Rivera Chávez</h3>
-				<h4>Fecha y lugar de nacimiento: 04 de septiembre / Santo Domingo - Ecuador</h4>
-				<img src="images/foto.png" alt="Foto" width="150px" height="200px"></img>				
+				<h4>Fecha y lugar de nacimiento: 04 de septiembre / Santo Domingo - Ecuador</h4>		
 			</article>
-			<article id="perfil">
-				<h2>Perfil</h2>
-				<p>
-					Desarrollador proyectos java, líder de proyectos, consultor técnico.</br>
-					<em>Idiomas</em>
-					<ul>
-						<li>Español</li>
-						<li>Inglés 40%</li>
-					</ul>
-				</p>				
+			<article id="educacion">
+				<h2>Educación</h2>
+				<table border="1" cellpadding="10" cellspacing="0">
+					<thead>
+						<tr>
+							<th>Año</th>
+							<th>Institución</th>
+							<th>Lugar</th>
+							<th>¿Culminó?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2013</td>
+							<td>UDLA-ITIL</td>
+							<td>Quito</td>
+							<td>SI</td>
+						</tr>
+						<tr>
+							<td>2013</td>
+							<td>UDLA-COBIT</td>
+							<td>Quito</td>
+							<td>SI</td>
+						</tr>
+						<tr>
+							<td>2016</td>
+							<td>CEC-EPN Gestión de proyectos</td>
+							<td>Quito</td>
+							<td>SI</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+			<article>
+				<h1>Agregar Estudios</h1>
+				<form name="formAgregarEstudio">
+					<label for="anio">Año:</label>
+					</br>
+					<select id="anio" name="anio">
+						<option value="2017">2017</option>
+						<option value="2016">2016</option>
+						<option value="2015">2015</option>
+					</select>
+					</br>
+					<label for="institucion">Institución:</label>
+					<input type="text" name="institucion" id="institucion" placeholder="UDLA" required>
+					</br>
+					<label for="lugar">Lugar:</label>
+					<input type="text" name="lugar" id="lugar" placeholder="Ej. Ciudad Quito">					
+					</br>
+					<p>
+					<label for="culmino">¿Culminó?:</label>
+					<label for="si">Si</label>
+					<input type="radio" name="culmino" id="si" required>
+					<label for="no">No</label>
+					<input type="radio" name="culmino" id="no" required>
+					</br>
+					</br>
+					<input type="submit" value="Enviar">
+				</form>
 			</article>
 		</section>
 		<footer>
